@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var isGoodForTheJob = function (ship) { return console.log(ship.model + " is good for the job? " + (ship.cargoContainers >= 4 ? 'YES' : 'NO')); };
+var isSmugglerShip = function (ship) { return console.log(ship.model + " is a smuggler's ship? " + (ship.hiddenContainers > 0 ? 'YES' : 'NO')); };
+var starfighters_1 = require("./starfighters");
+var xWing = new starfighters_1.XWing();
+xWing.jumpIntoHyperSpace();
+xWing.shootLasers();
+var falcon = new starfighters_1.MillenniunFalcon();
+isGoodForTheJob(falcon);
+isSmugglerShip(falcon);
+falcon.jumpIntoHyperSpace();
