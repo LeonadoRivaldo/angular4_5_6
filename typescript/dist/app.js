@@ -10,3 +10,5 @@ var falcon = new starfighters_1.MillenniunFalcon();
 isGoodForTheJob(falcon);
 isSmugglerShip(falcon);
 falcon.jumpIntoHyperSpace();
+var _ = require("lodash");
+console.log(_.pad("Teste", 10, "Testando"));
